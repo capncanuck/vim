@@ -1,5 +1,5 @@
 " http://www.charlietanksley.net/philtex/my-vimrc-file/
-
+" http://github.com/twerth/dotfiles/blob/master/etc/vim/vimrc
 
 " color scheme
 set t_Co=256
@@ -14,8 +14,6 @@ set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 set expandtab
-
-
 
 set encoding=utf-8
 set scrolloff=3
