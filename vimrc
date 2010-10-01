@@ -30,9 +30,20 @@ set ruler
 set backspace=indent,eol,start
 set laststatus=2
 
+" Try to not use the arrow keys... See how that works out.
+inoremap  <Up>     <NOP>
+inoremap  <Down>   <NOP>
+inoremap  <Left>   <NOP>
+inoremap  <Right>  <NOP>
+noremap   <Up>     <NOP>
+noremap   <Down>   <NOP>
+noremap   <Left>   <NOP>
+noremap   <Right>  <NOP>
 
-
-
+" Faster Esc
+"inoremap <Esc> <nop>
+"inoremap jj <Esc>
+imap ;; <Esc>
 
 " The first two lines fix Vim’s horribly broken default regex “handling” by automatically inserting a \v before any string you search for
 nnoremap / /\v
