@@ -1,11 +1,15 @@
 " http://www.charlietanksley.net/philtex/my-vimrc-file/
 " http://github.com/twerth/dotfiles/blob/master/etc/vim/vimrc
 
+set nocompatible
+
+syntax enable                     " Turn on syntax highlighting.
+filetype plugin indent on         " Turn on file type detection.
+
 " color scheme
 set t_Co=256
 syntax enable
 
-set nocompatible
 
 " The modelines bit prevents some security exploits having to do with modelines in files. I never use modelines so I don’t miss any functionality here.
 set modelines=0
@@ -29,6 +33,10 @@ set ttyfast
 set ruler
 set backspace=indent,eol,start
 set laststatus=2
+
+
+set incsearch                     " Highlight matches as you type.
+set hlsearch                      " Highlight matches.
 
 " Try to not use the arrow keys... See how that works out.
 inoremap  <Up>     <NOP>
@@ -62,5 +70,8 @@ set formatoptions=qrn1
 set list
 set listchars=tab:▸\ ,eol:¬
 
+set nobackup                      " Don't make a backup before overwriting a file.
+set nowritebackup                 " And again.
+set directory=$HOME/.vim/tmp//,.  " Keep swap files in one location
 
 au FocusLost * :wa
