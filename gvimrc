@@ -6,7 +6,7 @@ if has("gui_macvim")
 	colorscheme molokai
 	set guifont=Monaco:h14
 	set colorcolumn=85
-	set relativenumber
+"   set relativenumber
     " Hide Toolbar
     set guioptions=egmrt
 	set undofile

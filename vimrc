@@ -33,7 +33,7 @@ set ttyfast
 set ruler
 set backspace=indent,eol,start
 set laststatus=2
-
+set number
 
 set incsearch                     " Highlight matches as you type.
 set hlsearch                      " Highlight matches.
