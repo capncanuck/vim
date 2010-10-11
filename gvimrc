@@ -8,7 +8,7 @@ if has("gui_macvim")
 "   set relativenumber
     " Hide Toolbar
     set guioptions=egmrt
-    set undofile
+"    set undofile
     set stal=2 " turn on tabs by default
 "    set lines=25 columns=100
 endif
