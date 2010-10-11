@@ -14,10 +14,11 @@ syntax enable
 " The modelines bit prevents some security exploits having to do with modelines in files. I never use modelines so I don’t miss any functionality here.
 set modelines=0
 
+" Indentation without hard tabs
+set expandtab
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
-set expandtab
 
 set encoding=utf-8
 set scrolloff=3
