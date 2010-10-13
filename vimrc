@@ -3,8 +3,10 @@
 
 set nocompatible
 
-syntax enable                     " Turn on syntax highlighting.
-filetype plugin indent on         " Turn on file type detection.
+syntax enable                       " Turn on syntax highlighting.
+filetype on                         " Enable filetype detection
+filetype indent on                  " Enable filetype-specific indenting
+filetype plugin on                  " Enable filetype-specific plugins
 
 " color scheme
 set t_Co=256
