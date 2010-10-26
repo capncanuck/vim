@@ -5,7 +5,7 @@ set nocompatible
 
 " Pathogen - manage the runtime path: http://github.com/tpope/vim-pathogen
 call pathogen#runtime_append_all_bundles()
-call pathogen#helptags()
+"call pathogen#helptags()
 
 syntax enable                       " Turn on syntax highlighting.
 filetype on                         " Enable filetype detection
