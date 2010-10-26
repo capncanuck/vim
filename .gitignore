@@ -1,3 +1,4 @@
 *.un~
 .netrwhist
 tmp
+doc/tags
