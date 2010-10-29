@@ -107,3 +107,11 @@ endfunction
 " Format the statusline
 set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{CurDir()}%h\ \ \ Line:\ %l/%L%{GitBranch()}
 
+" Bubble single lines
+" From http://vimcasts.org/e/26
+nmap <C-Up> [e
+nmap <C-Down> ]e
+" Bubble multiple lines
+vmap <C-Up> [egv
+vmap <C-Down> ]egv
+
