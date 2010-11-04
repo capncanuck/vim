@@ -55,6 +55,12 @@ noremap   <Down>   <NOP>
 noremap   <Left>   <NOP>
 noremap   <Right>  <NOP>
 
+" Use TextMates tab mappings
+nmap <D-[> <<
+nmap <D-]> >>
+vmap <D-[> <gv
+vmap <D-]> >gv
+
 " Faster Esc
 "inoremap <Esc> <nop>
 "inoremap jj <Esc>
