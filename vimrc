@@ -113,6 +113,22 @@ endfunction
 " Format the statusline
 set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{CurDir()}%h\ \ \ Line:\ %l/%L%{GitBranch()}
 
+" http://vimcasts.org/episodes/tidying-whitespace/
+function! <SID>StripTrailingWhitespaces()
+    " Preparation: save last search, and cursor position.
+    let _s=@/
+    let l = line(".")
+    let c = col(".")
+    " Do the business:
+    %s/\s\+$//e
+    " Clean up: restore previous search history, and cursor position
+    let @/=_s
+    call cursor(l, c)
+endfunction
+
+" Use F5 to stip trailing whitespace in a file
+nnoremap <silent> <F5> :call <SID>StripTrailingWhitespaces()<CR>
+
 " Bubble single lines
 " From http://vimcasts.org/e/26
 nmap <C-Up> [e
