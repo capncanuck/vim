@@ -11,6 +11,11 @@ if has("gui_macvim")
 "    set undofile
     set stal=2 " turn on tabs by default
 "    set lines=25 columns=100
+
+    " This makes Vim show invisible characters with the same characters that TextMate uses.
+    set list
+    set listchars=tab:▸\ ,eol:¬
+
     "Git branch
     function! GitBranch()
         let branch = system("git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* //'")

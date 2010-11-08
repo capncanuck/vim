@@ -78,11 +78,6 @@ set wrap
 set textwidth=79
 set formatoptions=qrn1
 
-
-" This makes Vim show invisible characters with the same characters that TextMate uses.
-set list
-set listchars=tab:▸\ ,eol:¬
-
 set nobackup                      " Don't make a backup before overwriting a file.
 set nowritebackup                 " And again.
 set directory=$HOME/.vim/tmp//,.  " Keep swap files in one location
