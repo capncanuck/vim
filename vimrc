@@ -88,7 +88,7 @@ set nowritebackup                 " And again.
 set directory=$HOME/.vim/tmp//,.  " Keep swap files in one location
 
 " Save on focus lost
-au FocusLost * :wa
+"au FocusLost * :wa
 
 " http://vimcasts.org/episodes/tidying-whitespace/
 function! <SID>StripTrailingWhitespaces()
