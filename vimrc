@@ -115,6 +115,10 @@ vmap <C-Up> [egv
 vmap <C-Down> ]egv
 
 
+" Leader
+" Hardwrap paragraphs of text
+nnoremap <leader>q gqip
+
 " Source the vimrc file after saving it
 if has("autocmd")
   autocmd bufwritepost .vimrc source $MYVIMRC
