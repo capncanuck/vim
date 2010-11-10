@@ -72,6 +72,10 @@ vnoremap / /\v
 set ignorecase
 set smartcase
 
+" Use IDEA style comment toggle
+" Space after c is there in purpose!
+nmap <D-/> \c 
+vmap <D-/> \c 
 
 " Handle long lines correctly
 set wrap
