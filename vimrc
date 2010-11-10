@@ -41,6 +41,7 @@ set ruler
 set backspace=indent,eol,start
 set laststatus=2
 set number
+"set relativenumber
 
 set incsearch                     " Highlight matches as you type.
 set hlsearch                      " Highlight matches.
@@ -86,6 +87,7 @@ set nobackup                      " Don't make a backup before overwriting a fil
 set nowritebackup                 " And again.
 set directory=$HOME/.vim/tmp//,.  " Keep swap files in one location
 
+" Save on focus lost
 au FocusLost * :wa
 
 " http://vimcasts.org/episodes/tidying-whitespace/
