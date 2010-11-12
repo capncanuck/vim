@@ -1,6 +1,8 @@
 VIM Settings
 ============
 
+    git clone https://github.com/juretta/vim .vim
+
 Prerequisites:
 
     ln -s ~/.vim/vimrc ~/.vimrc
