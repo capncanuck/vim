@@ -1,7 +1,7 @@
 VIM Settings
 ============
 
-    git clone https://github.com/juretta/vim .vim
+    git clone https://github.com/juretta/vim.git .vim
 
 Prerequisites:
 
