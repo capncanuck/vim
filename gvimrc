@@ -9,7 +9,7 @@ if has("gui_macvim")
     " Hide Toolbar
     set guioptions=egmrt
 "    set undofile
-    set stal=2 " turn on tabs by default
+"    set stal=2 " turn on tabs by default
 "    set lines=25 columns=100
 
     " This makes Vim show invisible characters with the same characters that TextMate uses.
