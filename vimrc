@@ -31,6 +31,9 @@ set scrolloff=3
 set autoindent
 set showmode
 set showcmd
+" show matching parenthesis
+set showmatch
+" hides buffers instead of closing them
 set hidden
 set wildmenu
 set wildmode=list:longest
@@ -83,6 +86,10 @@ set wrap
 set textwidth=79
 set formatoptions=qrn1
 
+
+set pastetoggle=<F2>              " Use F2 to switch to paste mode
+
+set noswapfile
 set nobackup                      " Don't make a backup before overwriting a file.
 set nowritebackup                 " And again.
 set directory=$HOME/.vim/tmp//,.  " Keep swap files in one location
@@ -131,6 +138,14 @@ map <D-0>   :tablast<CR>
 " Leader
 " Hardwrap paragraphs of text
 nnoremap <leader>q gqip
+
+" Use Q for formatting the current paragraph (or selection)
+vmap Q gq
+nmap Q gqap
+
+" From http://nvie.com/posts/how-i-boosted-my-vim/
+" use w!! to save a file that needs to be edited using sudo
+cmap w!! w !sudo tee % >/dev/null
 
 " Source the vimrc file after saving it
 if has("autocmd")

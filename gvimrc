@@ -7,7 +7,7 @@ if has("gui_macvim")
 	set colorcolumn=85
 "   set relativenumber
     " Hide Toolbar, no scrollbars, autoselect
-    set guioptions=eagmt
+    set guioptions=egmrt
 
 "    set undofile
 "    set stal=2 " turn on tabs by default
