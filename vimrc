@@ -158,3 +158,7 @@ cmap w!! w !sudo tee % >/dev/null
 if has("autocmd")
   autocmd bufwritepost .vimrc source $MYVIMRC
 endif
+
+" See http://henrik.nyh.se/2011/03/vim-ruby-runner
+" Set filetype to Ruby with :FR
+command! FR set filetype=ruby
