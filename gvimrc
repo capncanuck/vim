@@ -3,7 +3,8 @@
 " ----------------------------------------------------------------------------------
 if has("gui_macvim")
 	colorscheme molokai
-	set guifont=Monaco:h14
+	set guifont=Inconsolata:h18
+    "set guifont=Monaco:h14
 	set colorcolumn=85
 "   set relativenumber
     " Hide Toolbar, no scrollbars, autoselect
