@@ -113,6 +113,9 @@ endfunction
 " Use F5 to stip trailing whitespace in a file
 nnoremap <silent> <F5> :call <SID>StripTrailingWhitespaces()<CR>
 
+" Use Ctrl + n to invoke NERDTree
+nmap <silent> <c-n> :NERDTreeToggle<CR>
+
 " Bubble single lines
 " From http://vimcasts.org/e/26
 nmap <C-Up> [e
