@@ -70,6 +70,10 @@ vmap <D-]> >gv
 "inoremap jj <Esc>
 imap ;; <Esc>
 
+" A few aliases for the muscle memory...
+nmap <C-U> dd
+vmap <C-U> dd
+
 " The first two lines fix Vim’s horribly broken default regex “handling” by automatically inserting a \v before any string you search for
 nnoremap / /\v
 vnoremap / /\v
@@ -77,7 +81,7 @@ set ignorecase
 set smartcase
 
 " Use IDEA style comment toggle
-" Space after c is there in purpose!
+" Space after c is there on purpose!
 nmap <D-/> \c 
 vmap <D-/> \c 
 
