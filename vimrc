@@ -50,6 +50,53 @@ set number
 set incsearch                     " Highlight matches as you type.
 set hlsearch                      " Highlight matches.
 
+set ignorecase
+set smartcase
+
+" Handle long lines correctly
+set wrap
+set textwidth=79
+set formatoptions=qrn1
+
+set pastetoggle=<F2>              " Use F2 to switch to paste mode
+
+set noswapfile
+set nobackup                      " Don't make a backup before overwriting a file.
+set nowritebackup                 " And again.
+set directory=$HOME/.vim/tmp//,.  " Keep swap files in one location
+
+" Save on focus lost
+"au FocusLost * :wa
+
+" http://vimcasts.org/episodes/tidying-whitespace/
+function! <SID>StripTrailingWhitespaces()
+    " Preparation: save last search, and cursor position.
+    let _s=@/
+    let l = line(".")
+    let c = col(".")
+    " Do the business:
+    %s/\s\+$//e
+    " Clean up: restore previous search history, and cursor position
+    let @/=_s
+    call cursor(l, c)
+endfunction
+
+" From http://nvie.com/posts/how-i-boosted-my-vim/
+" use w!! to save a file that needs to be edited using sudo
+cmap w!! w !sudo tee % >/dev/null
+
+" Source the vimrc file after saving it
+if has("autocmd")
+  autocmd bufwritepost .vimrc source $MYVIMRC
+endif
+
+" See http://henrik.nyh.se/2011/03/vim-ruby-runner
+" Set filetype to Ruby with :FR
+command! FR set filetype=ruby
+
+" ===================================================================================
+" Custom mappings
+" ===================================================================================
 " Try to not use the arrow keys... See how that works out.
 "inoremap  <Up>     <NOP>
 "inoremap  <Down>   <NOP>
@@ -84,42 +131,6 @@ map <C-l> <C-w>l
 " The first two lines fix Vim’s horribly broken default regex “handling” by automatically inserting a \v before any string you search for
 nnoremap / /\v
 vnoremap / /\v
-set ignorecase
-set smartcase
-
-" Use IDEA style comment toggle
-" Space after c is there on purpose!
-nmap <D-/> \c 
-vmap <D-/> \c 
-
-" Handle long lines correctly
-set wrap
-set textwidth=79
-set formatoptions=qrn1
-
-
-set pastetoggle=<F2>              " Use F2 to switch to paste mode
-
-set noswapfile
-set nobackup                      " Don't make a backup before overwriting a file.
-set nowritebackup                 " And again.
-set directory=$HOME/.vim/tmp//,.  " Keep swap files in one location
-
-" Save on focus lost
-"au FocusLost * :wa
-
-" http://vimcasts.org/episodes/tidying-whitespace/
-function! <SID>StripTrailingWhitespaces()
-    " Preparation: save last search, and cursor position.
-    let _s=@/
-    let l = line(".")
-    let c = col(".")
-    " Do the business:
-    %s/\s\+$//e
-    " Clean up: restore previous search history, and cursor position
-    let @/=_s
-    call cursor(l, c)
-endfunction
 
 " Use F5 to stip trailing whitespace in a file
 nnoremap <silent> <F5> :call <SID>StripTrailingWhitespaces()<CR>
@@ -157,15 +168,7 @@ nnoremap <leader>q gqip
 vmap Q gq
 nmap Q gqap
 
-" From http://nvie.com/posts/how-i-boosted-my-vim/
-" use w!! to save a file that needs to be edited using sudo
-cmap w!! w !sudo tee % >/dev/null
-
-" Source the vimrc file after saving it
-if has("autocmd")
-  autocmd bufwritepost .vimrc source $MYVIMRC
-endif
-
-" See http://henrik.nyh.se/2011/03/vim-ruby-runner
-" Set filetype to Ruby with :FR
-command! FR set filetype=ruby
+" Use IDEA style comment toggle
+" Space after c is there on purpose!
+nmap <D-/> \c 
+vmap <D-/> \c 
