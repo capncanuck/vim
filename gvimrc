@@ -3,7 +3,7 @@
 " ----------------------------------------------------------------------------------
 if has("gui_macvim")
 	colorscheme molokai
-	set guifont=Inconsolata:h18
+	set guifont=Inconsolata:h20
     "set guifont=Monaco:h14
 	set colorcolumn=85
 "   set relativenumber
