@@ -11,6 +11,10 @@
 " Thanks to perl.vim authors, and to Reimer Behrends. :-) (MN)
 " ----------------------------------------------------------------------------
 
+set tabstop=4
+set shiftwidth=2
+set softtabstop=2
+
 if exists("b:current_syntax")
   finish
 endif
