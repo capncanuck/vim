@@ -17,8 +17,9 @@ set t_Co=256
 syntax enable
 colorscheme ir_black
 
-" The modelines bit prevents some security exploits having to do with modelines in files. I never use modelines so I don’t miss any functionality here.
-set modelines=0
+" The modelines bit prevents some security exploits having to do with modelines in files. 
+" I never use modelines so I don’t miss any functionality here.
+" set modelines=0
 
 " Indentation without hard tabs
 set expandtab
