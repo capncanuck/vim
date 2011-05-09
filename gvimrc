@@ -28,7 +28,7 @@ if has("gui_macvim")
     endfunction
 
     function! CurDir()
-        return substitute(getcwd(), '/Users/amir/', "~/", "g")
+        return substitute(getcwd(), '/Users/stefan/', "~/", "g")
     endfunction
 
     function! HasPaste()
