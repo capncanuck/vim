@@ -19,3 +19,6 @@
 [submodule "bundle/ruby-runner"]
 	path = bundle/ruby-runner
 	url = git://github.com/henrik/vim-ruby-runner.git
+[submodule "bundle/command-t"]
+	path = bundle/command-t
+	url = git://git.wincent.com/command-t.git
