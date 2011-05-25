@@ -112,6 +112,11 @@ nmap <D-[> <<
 nmap <D-]> >>
 vmap <D-[> <gv
 vmap <D-]> >gv
+" Well, use <TAB> for tabbing...
+nmap <TAB> >>
+nmap <S-TAB> <<
+vmap <TAB> >gv
+vmap <S-TAB> <gv
 
 " Faster Esc
 "inoremap <Esc> <nop>
