@@ -177,3 +177,5 @@ nmap Q gqap
 " Space after c is there on purpose!
 nmap <D-/> \c 
 vmap <D-/> \c 
+
+map <D-e> :MRU<CR>
