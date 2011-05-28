@@ -28,3 +28,6 @@
 [submodule "bundle/vimerl"]
 	path = bundle/vimerl
 	url = git://github.com/oscarh/vimerl.git
+[submodule "bundle/vim-ack"]
+	path = bundle/vim-ack
+	url = git://github.com/mileszs/ack.vim.git
