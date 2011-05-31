@@ -7,6 +7,9 @@ set nocompatible
 call pathogen#runtime_append_all_bundles()
 "call pathogen#helptags()
 
+" Change the leader from the default "\" to ","
+let mapleader=","
+
 syntax enable                       " Turn on syntax highlighting.
 filetype on                         " Enable filetype detection
 filetype indent on                  " Enable filetype-specific indenting
@@ -175,7 +178,7 @@ nmap Q gqap
 
 " Use IDEA style comment toggle
 " Space after c is there on purpose!
-nmap <D-/> \c 
-vmap <D-/> \c 
+nmap <D-/> <leader>c 
+vmap <D-/> <leader>c 
 
 map <D-e> :MRU<CR>
