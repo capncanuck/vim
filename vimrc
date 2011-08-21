@@ -24,6 +24,15 @@ colorscheme ir_black
 " I never use modelines so I don’t miss any functionality here.
 " set modelines=0
 
+" watch for file changes
+set autoread
+
+" don't redraw when don't have to
+set lazyredraw
+
+set fileformats=unix
+set ff=unix
+
 " Indentation without hard tabs
 set expandtab
 set tabstop=4
