@@ -31,3 +31,6 @@
 [submodule "bundle/vim-ack"]
 	path = bundle/vim-ack
 	url = git://github.com/mileszs/ack.vim.git
+[submodule "bundle/vim-preview"]
+	path = bundle/vim-preview
+	url = git://github.com/greyblake/vim-preview.git
