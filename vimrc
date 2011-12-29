@@ -130,11 +130,6 @@ nmap <S-TAB> <<
 vmap <TAB> >gv
 vmap <S-TAB> <gv
 
-" Faster Esc
-"inoremap <Esc> <nop>
-"inoremap jj <Esc>
-imap ;; <Esc>
-
 " A few aliases for the muscle memory...
 nmap <C-U> dd
 vmap <C-U> dd
