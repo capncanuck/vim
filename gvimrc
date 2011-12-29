@@ -39,6 +39,6 @@ if has("gui_macvim")
     endfunction
 
     " Format the statusline
-    set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{CurDir()}%h\ \ \ Line:\ %l/%L%{GitBranch()}
+    set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{CurDir()}%h\ \ \ Line:\ %l/%L\ %c%{GitBranch()}
 
 endif
