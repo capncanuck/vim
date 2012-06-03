@@ -22,7 +22,7 @@ Add a new bundle:
 
     git submodule add http://example.com/bundle.git bundle/BUNDLENAME
     git add bundle
-    git commit -m "Added BUNDLE as a submodule"
+    git commit -m "Add BUNDLE as a submodule"
 
 Upgrade the bundle:
 
