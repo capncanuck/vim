@@ -196,26 +196,3 @@ vnoremap <Space> zf
 
 " Abbreviations
 ab lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-"Git branch
-function! GitBranch()
-    let branch = system("git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* //'")
-    if branch != ''
-        return '   Git Branch: ' . substitute(branch, '\n', '', 'g')
-    en
-    return ''
-endfunction
-
-function! CurDir()
-    return substitute(getcwd(), '/Users/stefan/', "~/", "g")
-endfunction
-
-function! HasPaste()
-    if &paste
-        return 'PASTE MODE  '
-    en
-    return ''
-endfunction
-
-" Format the statusline
-set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{CurDir()}%h\ \ \ Line:\ %l/%L\ %c%{GitBranch()}
