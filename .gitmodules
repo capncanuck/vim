@@ -19,9 +19,6 @@
 [submodule "bundle/ruby-runner"]
 	path = bundle/ruby-runner
 	url = git://github.com/henrik/vim-ruby-runner.git
-[submodule "bundle/vim-rails"]
-	path = bundle/vim-rails
-	url = git://github.com/tpope/vim-rails.git
 [submodule "bundle/vimerl"]
 	path = bundle/vimerl
 	url = git://github.com/oscarh/vimerl.git
