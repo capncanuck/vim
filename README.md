@@ -29,3 +29,9 @@ Upgrade the bundle:
     cd ./bundle/BUNDLENAME
     git pull
     
+
+
+External dependencies
+=====================
+
+* lushtags (ctags/TagBar integration for Haskell) https://github.com/bitc/lushtags
