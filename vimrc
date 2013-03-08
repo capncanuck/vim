@@ -215,6 +215,8 @@ let g:neocomplcache_enable_at_startup = 1
 " lambda and composition
 " let g:haskell_conceal              = 0
 
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/target/*,*/dist/*     " MacOSX/Linux
+
 " Ignore certain files when invoking Ctrl-P
 let g:ctrlp_custom_ignore = {
   \ 'dir':  '\v[\/]\.(git|hg|svn)$',
