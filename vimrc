@@ -143,6 +143,9 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 
+"nmap <C-k> :bnext<CR>
+"nmap <C-j> :bprev<CR>
+
 " The first two lines fix Vim’s horribly broken default regex “handling” by automatically inserting a \v before any string you search for
 nnoremap / /\v
 vnoremap / /\v
