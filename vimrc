@@ -219,6 +219,9 @@ set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/target/*,*/dist/*     " MacOSX/Linux
 
 " Ignore certain files when invoking Ctrl-P
 let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\v[\/]\.(git|hg|svn)$',
+  \ 'dir':  '\v[\/](\.(git|hg|svn)|cabal-dev)$',
   \ 'file': '\v\.(hi|o)$',
   \ }
+
+" NerdTree
+let NERDTreeIgnore=['\.vim$', '\~$', 'cabal-dev$', 'target$', 'dist$']
