@@ -210,6 +210,11 @@ ab lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmo
 " Enable neocomplcache
 let g:neocomplcache_enable_at_startup = 1
 
+" vim2hs
+" disable all conceals, including the simple ones like
+" lambda and composition
+" let g:haskell_conceal              = 0
+
 " Ignore certain files when invoking Ctrl-P
 let g:ctrlp_custom_ignore = {
   \ 'dir':  '\v[\/]\.(git|hg|svn)$',
