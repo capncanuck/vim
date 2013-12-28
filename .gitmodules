@@ -16,9 +16,6 @@
 [submodule "bundle/tabular"]
 	path = bundle/tabular
 	url = https://github.com/godlygeek/tabular.git
-[submodule "bundle/ruby-runner"]
-	path = bundle/ruby-runner
-	url = git://github.com/henrik/vim-ruby-runner.git
 [submodule "bundle/vimerl"]
 	path = bundle/vimerl
 	url = git://github.com/oscarh/vimerl.git
