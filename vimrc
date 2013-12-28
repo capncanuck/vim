@@ -214,6 +214,9 @@ let g:neocomplcache_enable_at_startup = 1
 " disable all conceals, including the simple ones like
 " lambda and composition
 " let g:haskell_conceal              = 0
+let g:haskell_multiline_strings = 1
+" let g:haskell_autotags = 1
+" let g:haskell_tags_generator = 'hasktags'
 
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/target/*,*/dist/*     " MacOSX/Linux
 
