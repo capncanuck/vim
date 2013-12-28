@@ -183,8 +183,8 @@ map <D-0>   :tablast<CR>
 nnoremap <leader>q gqip
 
 " Use Q for formatting the current paragraph (or selection)
-vmap Q gq
-nmap Q gqap
+vmap <leader>f gq
+nmap <leader>f gqap
 
 " Use IDEA style comment toggle
 " Space after c is there on purpose!
