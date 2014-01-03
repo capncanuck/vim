@@ -20,10 +20,14 @@ set t_Co=256
 syntax enable
 " colorscheme ir_black
 
-colorscheme molokai
+" colorscheme molokai
+set background=dark
+let g:solarized_termcolors=256
+colorscheme solarized
+
 "set list
 "set listchars=tab:▸\ ,eol:¬
-" The modelines bit prevents some security exploits having to do with modelines in files. 
+" The modelines bit prevents some security exploits having to do with modelines in files.
 " I never use modelines so I don’t miss any functionality here.
 " set modelines=0
 
@@ -188,8 +192,8 @@ nmap <leader>f gqap
 
 " Use IDEA style comment toggle
 " Space after c is there on purpose!
-nmap <D-/> <leader>c 
-vmap <D-/> <leader>c 
+nmap <D-/> <leader>c
+vmap <D-/> <leader>c
 
 map <D-e> :MRU<CR>
 
