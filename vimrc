@@ -228,3 +228,7 @@ let g:ctrlp_custom_ignore = {
 
 " NerdTree
 let NERDTreeIgnore=['\.vim$', '\~$', 'cabal-dev$', 'target$', 'dist$', '.cabal-sandbox$']
+
+" Powerline
+set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
+

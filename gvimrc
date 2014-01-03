@@ -2,8 +2,9 @@
 "                                 GUI settings
 " ----------------------------------------------------------------------------------
 if has("gui_macvim")
-	colorscheme molokai
-	set guifont=Inconsolata:h20
+"	colorscheme molokai
+"	https://github.com/Lokaltog/powerline-fonts/raw/master/Inconsolata/Inconsolata%20for%20Powerline.otf
+	set guifont=Inconsolata\ for\ Powerline:h20
     "set guifont=Monaco:h14
 	set colorcolumn=85
 "   set relativenumber
