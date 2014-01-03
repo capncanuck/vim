@@ -49,3 +49,6 @@
 [submodule "bundle/vim2hs"]
 	path = bundle/vim2hs
 	url = git@github.com:dag/vim2hs.git
+[submodule "bundle/vim-colors-solarized"]
+	path = bundle/vim-colors-solarized
+	url = git://github.com/altercation/vim-colors-solarized.git
