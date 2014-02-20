@@ -236,3 +236,6 @@ let NERDTreeIgnore=['\.vim$', '\~$', 'cabal-dev$', 'target$', 'dist$', '.cabal-s
 " Powerline
 set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
 
+" Ack
+" Search for word under cursor
+noremap <Leader>a :Ack <cword><cr>
