@@ -214,13 +214,16 @@ ab lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmo
 " Enable neocomplcache
 let g:neocomplcache_enable_at_startup = 1
 
+" let $PATH = $PATH . ':' . expand("~/.cabal/bin")
+" let g:necoghc_enable_detailed_browse = 1
+
 " vim2hs
 " disable all conceals, including the simple ones like
 " lambda and composition
 " let g:haskell_conceal              = 0
 let g:haskell_multiline_strings = 1
-" let g:haskell_autotags = 1
-" let g:haskell_tags_generator = 'hasktags'
+let g:haskell_autotags = 1
+let g:haskell_tags_generator = 'hasktags'
 
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/target/*,*/dist/*     " MacOSX/Linux
 
