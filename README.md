@@ -35,3 +35,16 @@ External dependencies
 =====================
 
 * lushtags (ctags/TagBar integration for Haskell) https://github.com/bitc/lushtags
+
+Install:
+
+    cabal install lushtags
+    cabal install ghc-mod
+
+Haskell integration
+===================
+
+* lushtags for showing outline information in TagBar
+* neco-ghc for auto-completion of pragma, language, import and function
+  completion
+* 
