@@ -4,8 +4,8 @@
 set nocompatible
 
 " Pathogen - manage the runtime path: http://github.com/tpope/vim-pathogen
-call pathogen#runtime_append_all_bundles()
-"call pathogen#helptags()
+call pathogen#infect()
+call pathogen#helptags()
 
 " Change the leader from the default "\" to ","
 let mapleader=","
