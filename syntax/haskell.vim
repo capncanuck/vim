@@ -42,7 +42,7 @@ syn region  hsString		start=+"+  skip=+\\\\\|\\"+  end=+"+  contains=hsSpecialCh
 syn match   hsCharacter		"[^a-zA-Z0-9_']'\([^\\]\|\\[^']\+\|\\'\)'"lc=1 contains=hsSpecialChar,hsSpecialCharError
 syn match   hsCharacter		"^'\([^\\]\|\\[^']\+\|\\'\)'" contains=hsSpecialChar,hsSpecialCharError
 syn match   hsNumber		"\<[0-9]\+\>\|\<0[xX][0-9a-fA-F]\+\>\|\<0[oO][0-7]\+\>"
-syn match   hsFloat		"\<[0-9]\+\.[0-9]\+\([eE][-+]\=[0-9]\+\)\=\>"
+syn match   hsFloat		    "\<[0-9]\+\(\.[0-9]\+\)\=\([eE][-+]\=[0-9]\+\)\=\>"
 
 
 " Keyword definitions. These must be patters instead of keywords
